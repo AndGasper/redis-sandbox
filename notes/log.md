@@ -1,0 +1,1 @@
+[02/23/2018] - Tried to rename the application from WebApplication1 to RedisSampleApplication. The build passes, but for "some reason" the build process is still generating a `WebApplication1/` directory; and, at the moment, I know too little about what Visual Studio is really doing to diagnose the why. Again, this wasn't the point of the assignment. 
