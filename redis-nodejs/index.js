@@ -21,3 +21,15 @@ client.get("String key", function (error, reply) {
     console.error('error', error);
     console.log("reply", reply);
 })
+
+function generateRedisProtocolStatement(command) {
+    var protocol = "";
+    protocol += `*${arguments.length}\r\n`;
+    var commands = Array.from(arguments);
+    commands.forEach(function(element) {
+        protocol += `$${element.length}\r\n`;
+        protocol += `${element}\r\n`;
+    });
+
+    return protocol;
+}
