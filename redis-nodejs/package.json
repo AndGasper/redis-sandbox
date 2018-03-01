@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/AndGasper/redis-sandbox#readme",
   "dependencies": {
-    "dotenv": "^5.0.0"
+    "dotenv": "^5.0.0",
+    "redis-cli": "^1.0.2"
   }
 }
